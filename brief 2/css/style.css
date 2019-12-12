@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    color:#6f6f6f;
+}
+.page{
+    min-width: 800px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: #000;
+    padding: 0;
+    z-index: 10;
+}
+.navbar-header{
+    position: relative;
+}
+.navbar-header a{
+    position: relative;
+}
+.navbar-header a .logo{
+    margin-top: 0;
+    width: 180px;
+    top: 0;
+    position: relative;
+}
+.navbar-menu{
+    position: relative;
+}
+.navbar-menu ul{
+    display: flex;
+    float: right !important;
+    margin: 0;
+    margin-right: -20px;
+}
+.navbar-menu ul li{
+    text-decoration: none;
+    list-style: none;
+    float: left !important;
+}
+.navbar-menu ul li a{
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    padding: 35px 15px;
+    display: flex;
+}
+.navbar-menu ul li a:hover{
+    color: #44c5ee !important;
+    text-decoration: none;
+}
+.btn-blue{
+    background-color: #038dfe;
+    border-radius: 100px;
+    box-shadow: 0px 0px 60px 0px rgba(68,197,238,.6);
+    display: inline-block;
+    transition: all .2s;
+}
+.btn-blue:hover{
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+section {
+    background-image: url(../images/back.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    display: block;
+}
+#home{
+    position: relative;
+    padding: 150px 0px 100px 0px;
+    background-color: black;
+}
+.slider>figure{
+    animation: imageAnimation 30s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    color: transparent;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+figure {
+    margin: 0;
+    display: block;
+}
+section .slider figure{
+    position: absolute;
+}
+.slider>figure:nth-child(1){
+    background-image: url(../images/slide/slide1.jpg);
+    background-size: cover;
+}
+.slider>figure:nth-child(2){
+    animation-delay: 6s;
+    background-image: url(../images/slide/slide2.jpg);
+    background-size: cover;
+}
+.slider>figure:nth-child(3){
+    animation-delay: 12s;
+    background-image: url(../images/slide/slide3.jpg);
+    background-size: cover;
+}
+.slider>figure:nth-child(4){
+    animation-delay: 18s;
+    background-image: url(../images/slide/slide4.jpg);
+    background-size: cover;
+}
+.slider>figure:nth-child(5){
+    animation-delay: 24s;
+    background-image: url(../images/slide/slide5.jpg);
+    background-size: cover;
+}
+@keyframes imageAnimation {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    8% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    17% {
+        opacity: 1
+    }
+    25% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+#home .container{
+    position: relative;
+}
+#home .container .containt p{
+    font-size: 18px;
+    margin-top: 25px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100 !important;
+}
+#home .container .containt h1{
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Montserrat' !important;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+}
+#home .container .containt{
+    margin-top: 25px;
+}
+#home .container .containt a{
+    padding:15px 40px;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-transparent{
+    color: #fff;
+    border: #fff 3px solid;
+    background-color: transparent;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    font-family: 'Montserrat';
+    box-shadow: none;
+}
+#home .container .containt a:hover{
+    color: #496174;
+    box-shadow: none;
+}
+#home .container .containt .btn {
+    margin-top: 25px;
+}
+#about{
+    text-align: center;
+}
+.padding1{
+    padding: 80px 0 0 0;
+}
+h2{
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #2b2b2b;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin: 20px 0 10px 0;
+}
+#about p{
+    padding-top: 20px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.row{
+    margin: 0 -15px;
+}
+.col{
+    float: left;
+}
+.box{
+    margin-top: 60px;
+}
+#about .box img{
+   height: 35px !important;
+}
+#about .box h4{
+    margin: 25px 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #496174;
+}
+#story{
+    margin-top: 5%;
+    background-image: linear-gradient(to top right, #038dfe, #0064b6);
+}
+#story .row{
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#story .col{
+    width: 50%;
+    padding: 0;
+}
+#story .col figure{
+    width: 620px;
+    position: absolute;
+    animation: imageEventAnimation 5s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+#story figure:nth-child(1){
+    animation-delay: 0s;
+    background-image: url(../images/event/devoxx3.jpg);
+    background-size: cover;
+}
+#story figure:nth-child(2){
+    animation-delay: 5s;
+    background-image: url(../images/event/slide2.jpg);
+    background-size: cover;
+}
+#story figure:nth-child(3){
+    animation-delay: 10s;
+    background-image: url(../images/event/slide3.jpg);
+    background-size: cover;
+}
+.story-content{
+    padding: 60px;
+    color: #ffffff;
+}
+.story-content h2{
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.story-content>p{
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size:18px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 25px 0;
+    
+}
+.story-content .text-story p{
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size:14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin:0;
+    
+}
+#simplon .simplon-titre{
+    position: relative;
+    text-align: center;
+    top:325px;
+    z-index: 3;
+}
+.simplon{
+    background-image: url(../images/simplon.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    filter: blur(1px);
+}
+#simplon .oppacity{
+    background-color: rgba(0, 0, 0, .7);
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+#newsletter{
+    background-color: #038dfe;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+#newsletter .col{
+    text-align: center;
+    padding-bottom: 10px;
+    border-right: 1px dashed #000;
+    height: 150px;
+}
+#newsletter .col:last-child{
+    border-right: 0px dashed #000;
+}
+#newsletter .col h1{
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 35px;
+    color: #fff;
+}
+#newsletter .col h3{
+    font-size: 23px;
+    font-style: normal !important;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#reseau{
+    padding: 50px 0;
+    margin-top: 20px;
+}
+#reseau .container{
+    color: #000;
+    margin-bottom: 30px;
+}
+#reseau .container p{
+    font-size: 16px;
+    line-height: 250%;
+    color: #666666;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+#reseau .container p strong{
+    font-size:20px;
+    color:#000;
+    font-weight: 700;
+}
+.clients{
+    text-align: center;
+    padding:50px 0 100px 0;
+}
+.clients .row{
+    display: block;
+}
+.clients .row h2{
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 60px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.inscription .row .col a{
+    text-align: center;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 25px 0;
+}
+.inscription .row .col .btn-blue{
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.inscription .row .col .btn-blue:hover{
+    color: #000;
+    box-shadow:0px 5px 15px #0000004d;
+}
+footer{
+    margin-top: 80px;
+    padding: 15px 50px;
+    background-color: #000;
+    width: 100%;
+    font: bold 16px sans-serif;
+}
+footer p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+footer .contact{
+    text-align: left;
+}
+footer .copyright{
+    text-align: center;
+}
+footer .footer-icons{
+    text-align: right;
+}
+footer .contact a{
+    color: #337ab7;
+}
+footer .copyright{
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+footer .copyright p{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+footer .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+#campus{
+    text-align: center;
+}
+.padding1{
+    padding: 80px 0 0 0;
+}
+#campus p{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+#story-text{
+    text-align: left;
+    padding: 60px;
+    background: #038dfe;
+    color: #fff;
+}
+#story-text li{
+    list-style: square;
+}
+#story-text li p{
+    line-height: 50px;
+    margin: 0;
+}
+#story-slide{
+    padding: 60px;
+}
+#story-slide .slide{
+    height: 500px;
+}
+#story-slide .slide figure{
+    background-image: url(../images/campus-slide/s1.jpg);
+    background-size: cover;
+}
+#story-slide .slide{
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+#story-slide .slide figure{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    animation: storySlide 20s linear infinite 0s;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+}
+@keyframes storySlide{
+    0%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s1.jpg);
+        background-size: cover;
+    }
+    20%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s2.jpg);
+        background-size: cover;
+    }
+    40%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s3.jpg);
+        background-size: cover;
+    }
+    60%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s4.jpg);
+        background-size: cover;
+    }
+    80%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s5.jpg);
+        background-size: cover;
+    }
+    100%{
+        animation-delay: 10s;
+        background-image: url(../images/campus-slide/s1.jpg);
+        background-size: cover;
+    }
+}
+#inscription{
+    width: 100%;
+    height: 100%;
+    padding:150px 60px;
+    text-align: center;
+}
+#inscription .row{
+    box-shadow: #0000002b 0px 0px 40px 10px;
+    border-radius: 30px;
+    margin: auto;
+}
+#inscription .row .inscription{
+    background: #fff;
+    border-radius: 30px 0 0 30px;
+}
+#inscription .row .entrée{
+    background: #038dfe;
+    border-radius: 0 30px 30px 0;
+}
+#inscription .row .box{
+    display: inline-block;
+}
+#inscription .row .box svg{
+    color: #038dfe;
+    width: 50px;
+    height: 50px;
+}
+#inscription .row .box h1{
+    text-transform: uppercase;
+    margin: 10px 0 25px 0;
+    color: #038dfe;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+#inscription .row .box input{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    width:280px;
+    height: 40px;
+    padding: 5px 15px;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    transition: all .2s;
+    box-shadow: #00000024 0px 5px 10px 0px ;
+    font-size: 16px;
+    font-weight: 500;
+}
+#inscription .row .box input:focus{
+    box-shadow: #038dfe29 0px 5px 10px 0px ;
+    border-radius: 30px;
+}
+#inscription .row .inscription a{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 70px;
+    margin: 20px 0 60px 0;
+    letter-spacing: 2px;
+}
+#inscription .row .inscription a:hover{
+    color: #038dfe;
+    box-shadow: #00000029 0px 5px 10px 0px ;
+}
+#inscription .row .entrée .box{
+    margin: 150px 0;
+}
+#inscription .row .entrée h1{
+    margin: auto;
+}
+#inscription .row .entrée h1{
+    text-transform: uppercase;
+    margin: 10px 0 25px 0;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+#inscription .row .entrée a{
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 70px;
+    margin: 20px 0 0 0;
+    letter-spacing: 2px;
+}
+#inscription .row .entrée a:hover{
+    color: #038dfe;
+    background: #fff;
+}
+#aprenant{
+    padding-top: 150px;
+}
+#aprenant .content{
+    margin-top: 10px;
+    padding: 30px 15px;
+}
+#aprenant .main-panel{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+#aprenant .main-panel .col-width{
+    text-align: center;
+    width: 35%;
+}
+#aprenant .content .row{
+    width: 100%;
+    position: relative;
+}
+#aprenant .main-panel .col-width .card-profile{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 25px 0;
+    border-radius: 10px;
+    color: rgba(0,0,0, 0.87);
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    width: 100%;
+}
+#aprenant .main-panel .col-width .card-profile .card-avatar{
+    max-width: 130px;
+    max-height: 130px;
+    margin: -50px auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+#aprenant .main-panel .col-width .card-profile .card-avatar img{
+    width: 100%;
+    height: auto;
+}
+#aprenant .main-panel .col-width .card-profile .content{
+    margin-top: 20px;
+    padding: 0;
+}
+#aprenant .main-panel .col-width .card-profile .content h3{
+    margin: 0 0 30px 0;
+}
+#aprenant .main-panel .col-width .card-profile .content p{
+    color: #909090;
+    border-top: 1px solid #d5d5d5;
+    padding-top: 10px;
+}
+#aprenant .main-panel .col{
+    float: right;
+}
+#aprenant .main-panel .col .notification{
+    background: #038dfe;
+    display: inline-block;
+    position: relative;
+    margin: 25px 0;
+    border-radius: 2px;
+    color:#fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    width: 100%;
+    padding: 10px;
+}
+#aprenant .row .compétences{
+    position: relative;
+    display: flex;
+    display:block;
+}
+#aprenant .row .compétences .col{
+    width: 50%;
+    position: relative;
+    float: left;
+}
+#aprenant .row .compétences .col .card-compétences{
+    width: 100%;
+    height: 120px;
+    margin: 30px 0;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    display: flex;
+}
+.card-header{
+    background: #038dfe;
+    color: #fff;
+    width: 100px;
+    height: 100%;
+    float: left;
+    border-radius: 10px 0 0 10px !important;
+    border: none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    text-align: center;
+    font-size: 50px;
+    padding: 30px 20px 20px 20px;
+}
+.card-content {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    padding: 10px;
+}
+.card-content h3{
+    color: #6f6f6f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.niveau{
+    color: #6f6f6f;
+}
