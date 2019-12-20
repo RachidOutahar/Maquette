@@ -1,0 +1,276 @@
+@media (max-width: 1150px) {
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* ==== home ==== */
+
+    #home{
+        text-align: center;
+    }
+    #home .container .containt h1{
+        font-size: 26px;
+    }
+    #home .container .containt p{
+        font-size: 20px;
+    }
+    #home .container .containt{
+        display: block;
+    }
+    #home .btn{
+        font-weight: 700 !important;
+        letter-spacing: 2px;
+        padding: 15px 50px !important;
+    }
+
+    /* ==== about ==== */
+
+    #about .container h2{
+        font-size: 28px;
+    }
+    #about .container p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    #about .row{
+        display: inline-block;
+    }
+
+    /* ==== story ==== */
+
+    #story .row{
+        display: inline-block;
+    }
+    #story .row .col{
+        width: 100%;
+        position: relative;
+    }
+    #story .row .col:first-of-type{
+        width: 100%;
+        height: 480px;
+        position: relative;
+    }
+    #story .story-content{
+        padding: 60px;
+    }
+
+    /* ==== newsletter ==== */
+
+    #newsletter .row{
+        display: inline-block;
+        text-align: center;
+    }
+    #newsletter .row .col{
+        margin-bottom: 40px;
+        border: none;
+    }
+    .inscription .row{
+        display: inline-block;
+        text-align: center;
+    }
+    .inscription h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    /* ==== footer ==== */
+
+    footer .row{
+        display: inline-block;
+        text-align: center;
+    }
+    footer .contact{
+        text-align: center;
+    }
+    footer .copyright{
+        text-align: center;
+    }
+    footer .footer-icons{
+        text-align: center;
+    }
+
+    /* ==== navbar ==== */
+
+    .navbar{
+        width: 100%;
+    }
+    .navbar .container{
+        display: block;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .navbar .navbar-header{
+        width: 100%;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .navbar .navbar-header a{
+        padding: 10px 15px;
+        display: inline-block;
+    }
+    .navbar .navbar-header img{
+        width: 150px;
+        margin: 0;
+    }
+    .navbar .navbar-menu{
+        clear: both;
+        float: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .8s ease-out;
+    }
+    .navbar .navbar-menu ul li{
+        border-bottom: 1px solid #fff;
+    }
+    .navbar .navbar-menu ul li:last-of-type{
+        border-bottom:none;
+    }
+    .navbar .navbar-menu ul, .navbar .navbar-menu ul li{
+        float: none !important;
+        display: block;
+    }
+    .navbar .navbar-menu ul{
+        margin-right: 0;
+    }
+    .navbar .navbar-menu ul a{
+        display: block;
+        padding: 15px 0;
+    }
+    .navbar .menu-icon{
+        padding: 30px 10px;
+        position: absolute;
+        left:5%;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .navbar .menu-icon .nav-icon{
+        background: #fff;
+        display: block;
+        height: 3px;
+        width: 20px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    .navbar .menu-icon .nav-icon::before{
+        background: #fff;
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        transition: all .5s ease-out;
+        top: 7px;
+    }
+    .navbar .menu-icon .nav-icon::after{
+        background: #fff;
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        transition: all .5s ease-out;
+        top: -7px;
+    }
+    .navbar .btn-blue{
+        box-shadow: none !important;
+    }
+    .navbar #menu-btn{
+        display: none;
+    }
+    .navbar #menu-btn:checked ~ .navbar-menu{
+        max-height: 800px;
+    }
+    .navbar #menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    .navbar #menu-btn:checked ~ .menu-icon .nav-icon::before{
+       transform: rotate(-45deg);
+       top: 0px;
+    }
+    .navbar #menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top: 0px;
+    }
+
+    /* == campus == */
+    #story-text{
+        padding: 25px;
+    }
+    #story-text p{
+        line-height: 30px !important;
+    }
+    #story-slide{
+        padding: 25px;
+    }
+    #story-slide .slide{
+        width: 100%;
+        height: 480px;
+    }
+
+    /* == inscript == */
+
+    #inscription .row .inscription {
+        border-radius: 30px 30px 0 0;
+    }
+    #inscription .row .entrée {
+        border-radius: 0 0 30px 30px;
+    }
+    /* == aprenant == */
+    #aprenant{
+        padding-top: 100px;
+    }
+    #aprenant .main-panel {
+    width: 100%;
+    }
+    #aprenant .content .row {
+        margin: 0px;
+    }
+    #aprenant .col-width{
+        width: 100% !important;
+    }
+    #aprenant .row > .col{
+        padding: 0;
+    }
+    #aprenant .row .compétences .col {
+        width: 100%;
+    }
+}
+
+@media (min-width:669px){
+    #inscription .row .inscription {
+        border-radius: 30px 0 0 30px;
+    }
+    #inscription .row .entrée {
+        border-radius: 0 30px 30px 0;
+    }
+}
+
+@media (min-width:700px) {
+    .container{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    input{
+        display: none;
+    }
+    .inscription{
+        text-align: center;
+    }
+    footer .row {
+    width: 100%;
+    margin: 0;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .container{
+        padding-left: 70px !important;
+        padding-right: 70px !important;
+    }
+    input{
+        display: none;
+    }
+}

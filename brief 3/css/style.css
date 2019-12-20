@@ -14,88 +14,10 @@ figure, footer, nav, section {
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
-  
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-  ul{
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-  a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-  }
-  
-  a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-  }  
-  input{
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-  }
-  input {
-    overflow: visible;
-  } 
   h1, h2, h3{
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
-  }
-  .list-inline {
-    padding-left: 0;
-    list-style: none;
-  }
-  
-  .list-inline-item {
-    display: inline-block;
-  }
-  
-  .list-inline-item:not(:last-child) {
-    margin-right: 0.5rem;
-  }
-  
-  .initialism {
-    font-size: 90%;
-    text-transform: uppercase;
-  }
-  
-  .blockquote {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-  }
-  
-  .blockquote-footer {
-    display: block;
-    font-size: 80%;
-    color: #6c757d;
-  }
-  
-  .blockquote-footer::before {
-    content: "\2014\00A0";
-  }
-  
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .img-thumbnail {
-    padding: 0.25rem;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .figure {
-    display: inline-block;
   }
   .container-fluid {
     width: 100%;
@@ -124,75 +46,6 @@ figure, footer, nav, section {
     flex-grow: 1;
     max-width: 100%;
   } 
-  .btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .btn {
-      transition: none;
-    }
-  }
-  
-  .btn:hover {
-    color: #212529;
-    text-decoration: none;
-  }
-  
-  .btn:focus, .btn.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-  
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
-  }
-  .card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-  }
-
 html,body{
     width: 100%;
     height: auto;
@@ -209,9 +62,6 @@ body{
     font-size: 14px;
     line-height: 24px;
     color:#6f6f6f;
-}
-.page{
-    min-width: 800px;
 }
 a{
     cursor: pointer;
@@ -271,7 +121,12 @@ a{
     color: #44c5ee !important;
     text-decoration: none;
 }
+.btn{
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+}
 .btn-blue{
+    border: 2px solid #038dfe;
     background-color: #038dfe;
     border-radius: 100px;
     box-shadow: 0px 0px 60px 0px rgba(68,197,238,.6);
@@ -279,6 +134,7 @@ a{
     transition: all .2s;
 }
 .btn-blue:hover{
+    border: 2px solid #fff;
     background-color: #fff;
     transform: translateY(-3px);
 }
@@ -385,8 +241,10 @@ section .slider figure{
     font-weight: 500;
 }
 .btn-transparent{
+    position: relative;
+    box-sizing: border-box;
     color: #fff;
-    border: #fff 3px solid;
+    border: #fff 2px solid;
     background-color: transparent;
     font-weight: 400;
     letter-spacing: 0.08em;
@@ -470,19 +328,9 @@ h2{
     width: 100%;
     z-index: 0;
 }
-#story figure:nth-child(1){
+#story figure{
     animation-delay: 0s;
     background-image: url(../images/event/devoxx3.jpg);
-    background-size: cover;
-}
-#story figure:nth-child(2){
-    animation-delay: 5s;
-    background-image: url(../images/event/slide2.jpg);
-    background-size: cover;
-}
-#story figure:nth-child(3){
-    animation-delay: 10s;
-    background-image: url(../images/event/slide3.jpg);
     background-size: cover;
 }
 .story-content{
@@ -924,7 +772,7 @@ footer .footer-icons a{
 }
 #aprenant .row .compétences .col .card-compétences{
     width: 100%;
-    height: 120px;
+    height: 180px;
     margin: 30px 0;
     position: relative;
     background: #fff;
