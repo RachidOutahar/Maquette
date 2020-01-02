@@ -274,3 +274,22 @@
         display: none;
     }
 }
+
+@media (max-width: 450px) {
+    #inscription{
+        padding:150px 20px;
+    }
+    #inscription .row .inscription a{
+        padding: 10px 40px;
+    }
+    #inscription .row .box{
+        width: 100%;
+        overflow: hidden;
+    }
+    #inscription .row .box input{
+        width: 95%;
+    }
+    #inscription .row .entrée a{
+        padding: 10px 50px;
+    }
+}

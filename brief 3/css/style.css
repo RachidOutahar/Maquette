@@ -198,18 +198,16 @@ section .slider figure{
 }
 @keyframes imageAnimation {
     0% {
-        animation-timing-function: ease-in;
         opacity: 0;
     }
-    8% {
-        animation-timing-function: ease-out;
+    10% {
         opacity: 1;
     }
-    17% {
+    25% {
         opacity: 1
     }
-    25% {
-        opacity: 0
+    50% {
+        opacity: 0;
     }
     100% {
         opacity: 0
@@ -577,7 +575,17 @@ footer .footer-icons a{
         background-image: url(../images/campus-slide/s1.jpg);
         background-size: cover;
     }
+    15%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s1.jpg);
+        background-size: cover;
+    }
     20%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s2.jpg);
+        background-size: cover;
+    }
+    35%{
         transition: ease-in-out;
         background-image: url(../images/campus-slide/s2.jpg);
         background-size: cover;
@@ -587,12 +595,27 @@ footer .footer-icons a{
         background-image: url(../images/campus-slide/s3.jpg);
         background-size: cover;
     }
+    55%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s3.jpg);
+        background-size: cover;
+    }
     60%{
         transition: ease-in-out;
         background-image: url(../images/campus-slide/s4.jpg);
         background-size: cover;
     }
+    75%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s4.jpg);
+        background-size: cover;
+    }
     80%{
+        transition: ease-in-out;
+        background-image: url(../images/campus-slide/s5.jpg);
+        background-size: cover;
+    }
+    95%{
         transition: ease-in-out;
         background-image: url(../images/campus-slide/s5.jpg);
         background-size: cover;
