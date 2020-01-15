@@ -1,110 +1,299 @@
-@media only screen and (max-width: 1100px) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-
-    .containeresp {
-        margin: 0%;
-    }
-
-    #toggle:checked+.menu {
-        display: block;
-    }
-
-    #Pic img {
+@media (max-width: 1100px) {
+    .navbar{
         width: 100%;
-        margin-top: 70px;
-        min-height: 700px;
+    }
+    .navbar .container{
+        display: block;
+        padding: 0 30px;
+    }
+    .navbar .navbar-header{
+        display: block;
+    }
+    .navbar .navbar-header a{
+        padding: 7px 0;
+        display: inline-block;
+    }
+    .navbar .navbar-header img{
+        top: 0;
     }
 
-    .menu img {
-        position: fixed;
-        left: 175px;
+    .navbar-contact {
+        display: none;
+    }
+
+    .navbar .navbar-menu{
+        position: relative;
+        clear: both;
+        float: none;
+        overflow: hidden;
+        max-height: 0;
+        right: 0;
+        transition: max-height .8s ease-out;
+    }
+    .navbar .navbar-menu ul, .navbar .navbar-menu ul li{
+        float: none !important;
+        display: block;
+    }
+    .navbar .navbar-menu ul{
+        margin-right: 0;
+    }
+    .navbar .navbar-menu ul a{
+        display: block;
+        padding: 25px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    .navbar .menu-icon{
+        padding: 11px 4px;
+        position: absolute;
+        right: 5%;
+        top: 15px;
+        cursor: pointer;
+        z-index: 99;
+        border: 2px solid #fff;
+        border-radius: 5px;
+    }
+    .navbar .menu-icon .nav-icon{
+        background: #fff;
+        display: block;
+        height: 2px;
+        width: 16px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    .navbar .menu-icon .nav-icon::before{
+        background: #fff;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        transition: all .5s ease-out;
         top: 6px;
-        width: 40px;
-        height: 40px;
-        margin-left: 0px;
-        margin-top: 10px;
     }
-
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-
-
-    .menu a {
+    .navbar .menu-icon .nav-icon::after{
+        background: #fff;
+        content: "";
         display: block;
-        border-bottom: 1px solid #B1A27E;
-        margin: 0;
-        padding: 0%;
-        background-color: #5E5C5F;
-        opacity: 95%;
-        color: white;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        transition: all .5s ease-out;
+        top: -6px;
+    }
+    .navbar #menu-btn{
+        display: none;
+    }
+    .navbar #menu-btn:checked ~ .navbar-menu{
+        max-height: 800px;
+    }
+    .navbar #menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    .navbar #menu-btn:checked ~ .menu-icon .nav-icon::before{
+       transform: rotate(-45deg);
+       top: 0px;
+    }
+    .navbar #menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top: 0px;
+    }
+    section#services{
+        margin-top: 0;
+    }
+    section#services .container{
+        padding: 0 30px;
+    }
+    section#services .container .content .propriete{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section#services .propriete-img{
+        justify-content: center;
+    }
+    
+    section#services .propriete-text{
+        padding-bottom: 60px;
+        height: auto;
+    }
+    section#services .propriete-text p{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    section#item-promo .item-navbar{
+        background-color: #827351;
+    }
+    section#item-promo .item-navbar .container ul li.list-active{
+        display: none;
+    }
+    section#item-promo .item-navbar .container ul li.item-promo-price{
+        width: 100%;
         text-align: center;
     }
-
-    .picpara {
-        display: none;
+    section#heading-item-promo .container {
+        padding-bottom: 150px;
+    }
+    section#item-promo .container .content .item-promo-content{
+        width: 100%;
+    }
+    section#item-promo .container .content .item-promo-content .detaille input{
+        width: 100%;
+    }
+    section#item-promo .container .content .item-promo-content .detaille h2{
+        font-size: 32px;
+    }
+    section#item-promo .container .content .item-promo-content .detaille h3{
+        font-size: 26px;
+    }
+    section#item-promo .container .content .item-promo-content .detaille a.btn{
+        margin-bottom: 60px;
     }
 
-    .button {
+
+}
+@media (max-width: 1250px) {
+    section#item-promo .container .content .our-promo{
         display: none;
     }
+}
+@media (max-width: 1059px) {
+    .left-img{
+        order: 1;
+    }
+}
 
-    .containeresp {
-        display: flex;
-        /* padding-left: 50px; */
-        width: 1150px;
-        font-family: 'Raleway', sans-serif;
-        margin-top: 150px;
-        margin-right: 150px;
-        flex-direction: column;
+@media (max-width: 800px) {
+    .container{
+        padding: 0 30px;
+    }
+    /* heading */
+    section#heading .container p{
+        width: 70%;
+        font-size: 12px;
+    }
+    section#heading{
+        padding-top:150px;
+        padding-bottom: 150px;
+    }
+    section#heading .container h1{
+        font-size: 36px;
+    }
+    section#services .container{
+        padding: 0 ;
+    }
+    section#contact .content{
+        width: 85%;
         margin: auto;
-    }
-
-    .picpararesp {
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        color: black;
         text-align: center;
-        margin-top: 50px;
     }
+    section#contact .content input{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    section#contact .content a{
+        width: 145px;
+    }
+    section#item-promo {
+        padding: 0px 0;
+    }
+    section#item-promo .container .content .item-promo-content .detaille p{
+        font-size: 12px;
+    }
+    /* footer */
+    footer .quick-links{
+        width: 80%;
+    }
+    footer .contact{
+        width: 80%;
+        position: relative;
+    }
+    footer .about{
+        width: 80%;
+        position: relative;
+    }
+    footer .container .content{
+        display: block;
+        text-align: center;
+    }
+    footer .container .content div{
+        margin: auto;
 
-    .buttonresp {
-        font-family: 'Raleway', sans-serif;
-        color: black;
-        letter-spacing: 2px;
+    }
+    footer .container .content .quick-links{
+        display: none;
+    }
+    footer .container .content .contact{
+        margin-top: 30px;
+    }
+    footer .copyright{
         font-size: 10px;
-        font-weight: 250;
-        margin-top: 50px;
-        padding: 10px 20px;
-        background-color: white;
-        border-radius: 99999px;
-        box-shadow: 0px 0px 5px black;
-        cursor: pointer;
-        transition: all 200ms ease-in-out;
-        text-decoration: none;
+        line-height: 25px;
+    }
+    footer .copyright .left{
+        left: 30px;
+    }
+    footer .copyright .right{
+        right:  30px;
+    }
+    footer .copyright .right a{
+        display: block;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+}
+@media (max-width: 550px){
+    section#services .propriete-text{
+        padding-top: 0;
+        width:85%;
         display: flex;
-        width: 7%;
-        align-items: center;
+        flex-wrap: wrap;
     }
-
-    .Pictitle {
-        margin-left: 100px;
-        margin-top: -150px;
+    section#services .propriete-img{
+        width: 100%;
+        height: auto;
+        display: flex;
     }
+    section#services .propriete-img img {
+        width: 100%;
+    }
+    section#services .propriete-text h2{
+        font-size: 30px;
+    
+    }
+    section#services .propriete-text p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+    section#promo .container{
+        padding: 0px;
+    }
+    section#promo .container .card-promo{
+        margin: 20px 0px;
+    }
+}
+@media (max-width: 450px) {
+    .container{
+        padding: 0 15px;
+    }
+    section#heading .container p{
+        width: 90%;
+    }
+    section#heading{
+        padding-top:150px;
+        padding-bottom: 250px;
+    }
+    
 
-
-
-
-
-
-
-
-
-
-
+    footer .copyright .left{
+        left: 15px;
+    }
+    footer .copyright .left{
+        right: 15px;
+    }
 }
