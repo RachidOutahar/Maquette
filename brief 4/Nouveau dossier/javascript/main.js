@@ -16,17 +16,19 @@ function toTop() {
     window.scrollTo(0, 0);
 };
 
-var slide = document.querySelector('.slide');
-var option = document.querySelectorAll('.option');
 
-var index = 1;
-var size = slide[index].clientWidth;
-
-update();
-
-function update(){
-    slide.style.transform = "translateX("+ (-size * index) +")";
-}
-
-window.addEventListener("scroll",function(){var off = window.pageYOffset;console.log(off)
+window.addEventListener("scroll",function(){
+    var off = window.pageYOffset;
+    console.log(off)
 });
+
+let navbar = document.getElementById("navbarscrol");
+
+window.onscroll = function() {
+    if (window.pageYOffset > 100) {
+        navbar.style.backgroundColor = "#494850";
+    }
+    else{
+        navbar.style.backgroundColor = "transparent";
+    }
+}

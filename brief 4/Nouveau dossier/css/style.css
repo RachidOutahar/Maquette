@@ -109,9 +109,10 @@ a{
     width: 100%;
     height: auto;
     position: fixed;
-    background-color: #494850;
+    background-color: transparent;
     padding: 0;
     z-index: 10;
+    transition: all .4s ease-out;
 }
 .navbar .container{
   display: flex;
