@@ -20,6 +20,7 @@
 
     .navbar-contact {
         display: none;
+        background-color: rgb(73, 72, 80);
     }
 
     .navbar .navbar-menu{

@@ -10,6 +10,16 @@
     user-select: none;
     font-family: 'Raleway', sans-serif;
 }
+/* usefull classes */
+.fexed-content{
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    top: 24px;
+    left: 840px;
+    background: white;
+}
+/* usefull classes */
 html {
     scroll-behavior: smooth;
 }
@@ -509,11 +519,11 @@ section#item-promo .container .content .item-promo-content .detaille .contact-te
 }
 section#item-promo .container .content .our-promo{
     width: 400px;
+    margin-left: 90px;
     overflow-x: hidden;
     display: block;
     padding-top: 95px;
-    position: absolute;
-    right: 60px;
+    
 }
 section#item-promo .container .content .our-promo .our-promo-item{
     display: flex;
