@@ -1,0 +1,16 @@
+@mixin resize() {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin container() {
+    width: 90%;
+    margin: auto;
+}
+@mixin logo() {
+    color: $heroColor;
+    font-family: $logoFont;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

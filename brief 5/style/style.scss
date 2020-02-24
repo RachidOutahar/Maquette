@@ -1,0 +1,97 @@
+@import "variable";
+@import "mixin";
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,400,500,600,700,800,900&display=swap');
+
+//style
+*{
+    @include resize();
+}
+body{
+    @include resize();
+    background-color: $bodyBackground;
+}
+nav{
+    width: 100%;
+    .container{
+        @include container();
+        .content{
+            width: 100%;
+            display: flex;
+            padding-top: 58px;
+            position: relative;
+            .logo{
+                @include logo();
+                font-size: 38px;
+                user-select: none;
+            }
+            .navbar{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                .menu{
+                    display: flex;
+                    width: 30%;
+                    margin-right: 80px;
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        width: 100%;
+                        li{
+                            width: 30%;
+                            display: flex;
+                            a{
+                                color: #939597;
+                                font-family: $heroFont;
+                                font-size: 16px;
+                                text-decoration: none;
+                                display: flex;
+                                padding: 10px;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+                .nav-icon{
+                    width: 70px;
+                    height: 70px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: $heroColor;
+                    position: fixed;
+                    top: 42px;
+                    float: right;
+                    cursor: pointer;
+                    span{
+                        background-color: #fff;
+                        width: 17px;
+                        height: 1px;
+                        display: block;
+                        position: relative;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    span::after{
+                        content: "";
+                        background-color: #fff;
+                        width: 17px;
+                        height: 1px;
+                        position: absolute;
+                        top: 6px;
+                    }
+                    span::before{
+                        content: "";
+                        background-color: #fff;
+                        width: 17px;
+                        height: 1px;
+                        position: absolute;
+                        top: -6px;
+                    }
+                }
+            }
+        }
+    }
+}

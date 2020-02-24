@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Prompt:300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #F6F6F6;
+}
+
+nav {
+  width: 100%;
+}
+
+nav .container {
+  width: 90%;
+  margin: auto;
+}
+
+nav .container .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 58px;
+  position: relative;
+}
+
+nav .container .content .logo {
+  color: #CF1D2F;
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 38px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+nav .container .content .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .container .content .navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  margin-right: 80px;
+}
+
+nav .container .content .navbar .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+nav .container .content .navbar .menu ul li {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .container .content .navbar .menu ul li a {
+  color: #939597;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+nav .container .content .navbar .nav-icon {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  background-color: #CF1D2F;
+  position: fixed;
+  top: 42px;
+  float: right;
+  cursor: pointer;
+}
+
+nav .container .content .navbar .nav-icon span {
+  background-color: #fff;
+  width: 17px;
+  height: 1px;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+nav .container .content .navbar .nav-icon span::after {
+  content: "";
+  background-color: #fff;
+  width: 17px;
+  height: 1px;
+  position: absolute;
+  top: 6px;
+}
+
+nav .container .content .navbar .nav-icon span::before {
+  content: "";
+  background-color: #fff;
+  width: 17px;
+  height: 1px;
+  position: absolute;
+  top: -6px;
+}
+/*# sourceMappingURL=style.css.map */
