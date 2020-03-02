@@ -1,0 +1,110 @@
+@media (max-width: 1200px) {
+  header .nav-icon {
+    display: block !important;
+  }
+  header .list {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .CardCarousel-card-container {
+    width: 33.3333% !important;
+  }
+}
+
+@media (min-width: 767px) {
+  section.main {
+    background-color: #fff !important;
+    margin: -40px 60px 0;
+    border-radius: 8px 8px 0 0;
+  }
+  .cardcarousel-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    height: 48px !important;
+    padding: 0 0 0 24px !important;
+  }
+  .site-header-logo {
+    top: -1 !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-header-logo img {
+    max-height: 24px;
+  }
+  .site-header-nav {
+    display: none !important;
+  }
+  .hero-image .headline h1 {
+    font-size: 24px !important;
+    line-height: 35px !important;
+  }
+  .services ul li p {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .services .icon {
+    font-size: 20px;
+  }
+  .lyp {
+    padding: 220px 30px !important;
+  }
+  .lyp a {
+    font-size: 12px;
+  }
+  #contact div {
+    display: block !important;
+  }
+  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+    width: 100% !important;
+  }
+  section.contact {
+    margin: 0px 25px 0;
+  }
+  .contact h1 {
+    font-size: 16px !important;
+  }
+  section.contact div #contact input[type="text"], section.contact div #contact input[type="email"], section.contact div #contact input[type="tel"], section.contact div #contact textarea {
+    font-size: 12px !important;
+    padding: 5px !important;
+    height: 45px !important;
+  }
+  section.contact div #contact textarea {
+    height: 100px !important;
+  }
+  section.services ul li {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardcarousel-header h1 {
+    font-size: 16px !important;
+  }
+  .CardCarousel-card-container {
+    width: 50% !important;
+  }
+  section.services ul li {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .CardCarousel-card-container {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=media.css.map */
